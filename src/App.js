@@ -7,10 +7,10 @@ import Modal from './components/modal';
 function App() {
   const [data, setData] = useState([]);
 
-  // const [isModalOpen, setIsModalOpen] = useState(
-  //   sessionStorage.getItem('visited') ? false : true
-  // );
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(
+    sessionStorage.getItem('visited') ? false : true
+  );
+  // const [isModalOpen, setIsModalOpen] = useState(true);
 
   const modalClose = () => setIsModalOpen(false);
 

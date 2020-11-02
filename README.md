@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# H & B Products page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project was build in React using the create-react-app.
 
-## Available Scripts
+### How to Run :
 
-In the project directory, you can run:
+1. Clone the repo
+2. Run `npm start` in the root directory
 
-### `yarn start`
+### Dependacies :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Axios was used to fetch data from the api.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Components :
 
-### `yarn test`
+1. The layout was build in the main App component.
+2. Card component to display each product and was iterated by the dat from the api.
+3. Modal component to display modal when the user first visits the site. This functionality is using useState hook and session storage. Modal close functionality was using useState isModalOpen state
+4. Countdown component to display the count down timer. This uses useState, useEffect and useRef hooks. A destructor was used to clear the values at component unmount.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Design :
 
-### `yarn build`
+1. Layout created by following BEM approach
+2. Used grid to implement basic layout
+3. Flexbox was used for the card container
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Challenges :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Timer functionality took a bit more time to implement the logic.
+2. Confused weather to use sessionStorage, localStorage, Context API or Redux for implementing the first time visit modal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Things to improve if I had more time :
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Started the project in a mobile first approach & implemented responsive design
+2. Started the project in a TDD approach or implemented tests using Jest after the main functionalities
+3. Used SASS or styled components instead of regular css
+4. Declared Environment variables instead of hardcoding the End date in count down and API url
+5. Rearranged imports in alphabetical order
+6. Comments for complex logics

@@ -3,7 +3,6 @@ import CountDownTimer from '../countdown-timer';
 import './modal.css';
 
 const Modal = ({ modalClose }) => {
-  console.log('object');
   return (
     <div className='modal'>
       <div className='modal__box'>
