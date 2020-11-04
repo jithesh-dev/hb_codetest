@@ -37,7 +37,7 @@ function App() {
             <Card
               key={item.id}
               name={item.name}
-              imageURL={item.images.smallSrc.path}
+              imageURL={item.images.smallSrc}
               finalPrice={item.final_price}
               inStock={item.inStock}
               sku={item.sku}
